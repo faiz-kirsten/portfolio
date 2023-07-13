@@ -648,17 +648,22 @@ header {
 .resume__education-info-wrapper {
     --flow-space: 0.75em;
 }
-.resume__education-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .resume__heading-container {
     display: flex;
     align-items: center;
     gap: 0.6em;
     margin-bottom: 1em;
 }
+
+@media (min-width: 40em) {
+    .resume__education-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 .resume__h4 {
     font-weight: var(--fw-semi-bold);
 }
