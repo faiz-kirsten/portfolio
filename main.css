@@ -506,8 +506,8 @@ header {
     content: "";
     border: var(--clr-primary-900) 5px solid;
     border-radius: 10000px;
-    transform: translate(-5px, 10px);
-    width: 20em;
+    transform: translate(-12px, 5px);
+    width: 18em;
     height: 26em;
     position: absolute;
     z-index: -1;
@@ -515,7 +515,7 @@ header {
 
 .hero__headshot {
     height: 25em;
-    min-width: 20em;
+    min-width: 18em;
     border-radius: 10000px;
     object-fit: cover;
     z-index: -1;
@@ -601,6 +601,7 @@ header {
 .about-me__img {
     object-fit: cover;
     height: 25em;
+    width: 17em;
     border-radius: 10000px;
 }
 
@@ -802,15 +803,15 @@ header {
 }
 
 .project__img-wrapper-1 {
-    background-image: url(assets/projects/127.0.0.1_5500_L1T20_index.html.jpg);
+    background-image: url(assets/projects/project-bodyboost.jpg);
 }
 
 .project__img-wrapper-2 {
-    background-image: url(assets/projects/127.0.0.1_5500_L1T20_index.html.jpg);
+    background-image: url(assets/projects/project-bodyboost.jpg);
 }
 
 .project__img-wrapper-3 {
-    background-image: url(assets/projects/127.0.0.1_5500_L1T20_index.html.jpg);
+    background-image: url(assets/projects/project-bodyboost.jpg);
 }
 
 .project__details {
