@@ -1,13 +1,446 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+        <script src="app.js" defer></script>
+        <!-- Font Awesome API -->
+        <script
+            src="https://kit.fontawesome.com/540a71fd64.js"
+            crossorigin="anonymous"
+            defer></script>
+        <!-- Font family -->
+        <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet" />
+        <title>faizkirsten.com</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-container | navbar">
+                <a href="#" class="logo">
+                    <span>faiz<span class="clr-primary-700">.dev</span></span>
+                </a>
+                <ul class="navbar__menu" role="list">
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__link link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#resume" class="navbar__link link">Resume</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#portfolio" class="navbar__link link">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact" class="navbar__link link">Contact</a>
+                    </li>
+                </ul>
+                <span class="hamburger">
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                </span>
+            </nav>
+        </header>
+        <main>
+            <div class="sections-wrapper">
+                <section class="hero">
+                    <div class="main-container | hero__inner-wrapper">
+                        <div class="hero__headshot-wrapper">
+                            <img
+                                src="assets/professional-images/professional-img1.jpg"
+                                alt=""
+                                class="hero__headshot" />
+                        </div>
+                        <div class="flow | hero__details">
+                            <h1 class="hero-title">
+                                <div
+                                    class="clr-primary-500 | hero-title__intro">
+                                    Hello, I'm
+                                </div>
+                                <div class="hero-title__name">Faiz Kirsten</div>
+                                <div class="clr-primary-600 | hero-title__job">
+                                    Fullstack Web Developer
+                                </div>
+                            </h1>
+
+                            <p class="hero__details-bio">
+                                I am an aspiring full-stack software and web
+                                engineer. I am a lifelong learner, and my
+                                curiosity is what drives my analytical thinking
+                                and problem solving.
+                            </p>
+                            <div class="hero__cta">
+                                <a href="#contact">
+                                    <button data-type="primary">
+                                        Get in touch
+                                    </button>
+                                </a>
+                                <a
+                                    href="#portfolio"
+                                    data-type="naked"
+                                    class="align-center"
+                                    >Portfolio</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-me" id="about">
+                    <div class="main-container | about-me__inner-wrapper">
+                        <div class="about-me__img-wrapper">
+                            <img
+                                src="assets/professional-images/professional-img2-1.jpg"
+                                alt=""
+                                class="about-me__img" />
+                        </div>
+                        <!-- </div> -->
+                        <div class="about-me__info">
+                            <div class="heading-pair__about-me">
+                                <h3>About me</h3>
+                                <h2>Get To Know Me</h2>
+                            </div>
+                            <div class="flow | about-me__bio-wrapper">
+                                <p class="clr-grey-900 | about-me__bio">
+                                    Hey! I'm Faiz. I am a curious individual who
+                                    is fascinated by the inner workings of
+                                    technology and enjoys exploring why things
+                                    function the way they do. Constantly seeking
+                                    ways to enhance productivity, I strive to
+                                    find efficient solutions in my work as a
+                                    full-stack software and web engineer. With
+                                    experience in Java, HTML, CSS, JavaScript,
+                                    and SASS, I possess the skills necessary to
+                                    implement website designs while prioritizing
+                                    readability and maintainability of the code
+                                </p>
+                                <p>
+                                    I am eager to collaborate with a team of
+                                    like-minded individuals, leveraging our
+                                    collective knowledge and expertise to create
+                                    innovative solutions. I look forward to both
+                                    sharing my own insights and continuously
+                                    learning from the talented individuals
+                                    around me. Together, we can embark on
+                                    exciting projects and push the boundaries of
+                                    what is possible in the realm of technology.
+                                </p>
+                            </div>
+                            <div class="about-me__cta">
+                                <button data-type="primary">View CV</button>
+                                <a
+                                    href="https://www.linkedin.com/in/faiz-kirsten-8547a625b/"
+                                    target="_blank">
+                                    <i
+                                        class="fa-brands fa-linkedin | social-icon"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/faiz-kirsten"
+                                    target="_blank">
+                                    <i
+                                        class="fa-brands fa-github | social-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="resume" id="resume">
+                    <div class="main-container | resume__inner-wrapper">
+                        <div class="heading-pair">
+                            <h3>Resume</h3>
+                            <h2>Skills, Education & Experience</h2>
+                        </div>
+                        <div class="flow | resume__info">
+                            <div class="resume__skills">
+                                <div class="resume__heading-container">
+                                    <h4 class="resume__h4">Skills</h4>
+                                    <div class="resume-line"></div>
+                                </div>
+                                <div
+                                    class="skills__wrapper active"
+                                    id="tab-skills"
+                                    data-tab-content>
+                                    <div class="active skills">
+                                        <div>
+                                            <div class="skill">
+                                                <span class="skill__icon">
+                                                    <i
+                                                        class="fa-brands fa-css3-alt"></i>
+                                                </span>
+                                                <span class="skill__name"
+                                                    >CSS</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill__icon">
+                                                <i
+                                                    <
+                                                    class="fa-brands fa-html5"></i>
+                                            </span>
+                                            <span class="skill__name"
+                                                >HTML</span
+                                            >
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill__icon">
+                                                <i
+                                                    class="fa-brands fa-square-js"></i>
+                                            </span>
+                                            <span class="skill__name"
+                                                >JavaScript</span
+                                            >
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill__icon">
+                                                <i
+                                                    class="fa-brands fa-sass"></i>
+                                            </span>
+                                            <span class="skill__name"
+                                                >Sass</span
+                                            >
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill__icon">
+                                                <i
+                                                    class="fa-brands fa-git-alt"></i>
+                                            </span>
+                                            <span class="skill__name">Git</span>
+                                        </div>
+                                        <div class="skill">
+                                            <span class="skill__icon">
+                                                <i
+                                                    class="fa-brands fa-git-alt"></i>
+                                            </span>
+                                            <span class="skill__name"
+                                                >Responsive Web Design</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resume__experience">
+                                <div class="resume__heading-container">
+                                    <h4 class="resume__h4">Experience</h4>
+                                    <div class="resume-line"></div>
+                                </div>
+                                <p class="resume__experience-message">
+                                    Open to work
+                                </p>
+                            </div>
+                            <div class="resume__education">
+                                <div class="resume__heading-container">
+                                    <h4 class="resume__h4">Education</h4>
+                                    <div class="resume-line"></div>
+                                </div>
+                                <div
+                                    class="flow | resume__education-info-wrapper">
+                                    <div>
+                                        <div class="resume__education-info">
+                                            <div class="resume__institution">
+                                                Hyperion Dev
+                                            </div>
+                                            <div class="resume__year">
+                                                2022 - Current
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="clr-primary-900 | resume__course-name">
+                                            Full Stack Web & Software Engineer
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="resume__education-info">
+                                            <div class="resume__institution">
+                                                Hyperion Dev
+                                            </div>
+                                            <div class="resume__year">
+                                                2021 - 2022
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="clr-primary-900 | resume__course-name">
+                                            Fundamentals of Computer Science
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="resume__education-info">
+                                            <div class="resume__institution">
+                                                Hoërskool President High School
+                                            </div>
+                                            <div class="resume__year">
+                                                2015 - 2020
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="clr-primary-900 | resume__course-name">
+                                            National Senior Certificate
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="portfolio" id="portfolio">
+                    <div
+                        class="flow | main-container | portfolio__inner-wrapper">
+                        <div class="heading-pair">
+                            <h3>Portfolio</h3>
+                            <h2>My Work</h2>
+                        </div>
+                        <div class="no-projects-alert__wrapper">
+                            <p class="no-projects-alert">
+                                New projects coming soon...
+                            </p>
+                        </div>
+                        <div class="tabs-wrapper">
+                            <ul class="tabs" role="list">
+                                <li class="tab active">Featured</li>
+                                <li class="tab">All</li>
+                                <li class="tab">HTML/CSS/JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="portfolio__projects">
+                            <div class="projects">
+                                <div class="project" data-tech="html">
+                                    <div
+                                        class="project__img-wrapper project__img-wrapper-1"></div>
+                                    <div class="project__details">
+                                        <div class="project__details-inner">
+                                            <a href="" class="portfolio-link"
+                                                >Project Info
+                                                <i
+                                                    class="fa-solid fa-arrow-up-right-from-square | external-link-icon"></i
+                                            ></a>
+                                            <a href="" class="portfolio-link"
+                                                >Live Demo
+                                                <i
+                                                    class="fa-solid fa-arrow-up-right-from-square | external-link-icon"></i
+                                            ></a>
+                                            <a href="" class="portfolio-link"
+                                                >Code
+                                                <i
+                                                    class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project" data-tech="html">
+                                    <div
+                                        class="project__img-wrapper project__img-wrapper-2"></div>
+                                    <div class="project__details">
+                                        <div class="project__details-inner">
+                                            <a href="" class="portfolio-link"
+                                                >Project Info
+                                                <i
+                                                    class="fa-solid fa-arrow-up-right-from-square | external-link-icon"></i
+                                            ></a>
+                                            <a href="" class="portfolio-link"
+                                                >Live Demo
+                                                <i
+                                                    class="fa-solid fa-arrow-up-right-from-square | external-link-icon"></i
+                                            ></a>
+                                            <a href="" class="portfolio-link"
+                                                >Code
+                                                <i
+                                                    class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project" data-tech="html">
+                                    <div
+                                        class="project__img-wrapper project__img-wrapper-3"></div>
+                                    <div class="project__details">
+                                        <div class="project__details-inner">
+                                            <a href="" class="portfolio-link"
+                                                >Project Info
+                                                <i
+                                                    class="fa-solid fa-arrow-up-right-from-square | external-link-icon"></i
+                                            ></a>
+                                            <a href="" class="portfolio-link"
+                                                >Live Demo
+                                                <i
+                                                    class="fa-solid fa-arrow-up-right-from-square | external-link-icon"></i
+                                            ></a>
+                                            <a href="" class="portfolio-link"
+                                                >Code
+                                                <i
+                                                    class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact-me" id="contact">
+                    <div class="main-container | contact-me__inner-wrapper">
+                        <div class="heading-pair">
+                            <h3>Contact Me</h3>
+                            <h2>Get In Touch</h2>
+                        </div>
+                        <div class="flow | contact-me__details">
+                            <div class="contact-me__detail">
+                                <div class="contact-me__icon-wrapper">
+                                    <i
+                                        class="fa-solid fa-map-location-dot | contact-me__icon"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-me__h4">Location</div>
+                                    <div class="contact-me__info">
+                                        Johannesburg, South Africa
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-me__detail">
+                                <div class="contact-me__icon-wrapper">
+                                    <i
+                                        class="fa-solid fa-envelope-open-text | contact-me__icon"></i>
+                                </div>
+                                <div>
+                                    <div class="contact-me__h4">Email</div>
+                                    <div class="contact-me__info">
+                                        faizkirsten@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="bg-clr-grey-800 | footer">
+                <div class="main-container | footer__inner-wrapper">
+                    <span class="clr-grey-100 | footer__copyright"
+                        >All rights reserved © 2023
+                        <span class="fw-bold">Faiz Kirsten</span></span
+                    >
+                    <span class="footer__social-icons">
+                        <a
+                            href="https://www.linkedin.com/in/faiz-kirsten-8547a625b/"
+                            target="_blank">
+                            <i
+                                class="fa-brands fa-linkedin | footer__social-icon"></i>
+                        </a>
+                        <a
+                            href="https://github.com/faiz-kirsten"
+                            target="_blank">
+                            <i
+                                class="fa-brands fa-github | footer__social-icon"></i>
+                        </a>
+                    </span>
+                </div>
+            </footer>
+            <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+        </main>
+    </body>
 </html>
