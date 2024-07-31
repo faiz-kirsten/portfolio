@@ -1,3 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+}
+
+.logo > div {
+    filter: invert(56%) sepia(33%) saturate(3716%) hue-rotate(150deg)
+        brightness(97%) contrast(95%);
+}
+.logo:hover > div {
+    width: 8rem;
+}
+
+.icon:hover {
+    filter: invert(56%) sepia(33%) saturate(3716%) hue-rotate(150deg)
+        brightness(97%) contrast(95%);
+}
+
+/* 3 dot loader */
+.loader {
+    width: 2rem;
+    height: 1rem;
+    background: radial-gradient(circle closest-side, #000 90%, #0000) 0 /
+        calc(100% / 3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 2s steps(4) infinite;
+    transform: translate(0px, -4px);
+}
+
+@keyframes l1 {
+    to {
+        clip-path: inset(0 -34% 0 0);
+    }
+}

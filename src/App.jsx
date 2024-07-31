@@ -1,5 +1,10 @@
+import UnderConstruction from "./pages/UnderConstruction";
+
 const App = () => {
-    return <div>App</div>;
+    const maintenance = true;
+    if (maintenance) return <UnderConstruction />;
+
+    return <div></div>;
 };
 
 export default App;
