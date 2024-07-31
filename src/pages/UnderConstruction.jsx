@@ -11,8 +11,8 @@ const UnderConstruction = () => {
                 </a>
             </header>
             <main className="grid gap-5 | md:">
-                <div className="text-xl | md:">
-                    My Portfolio Website Under Construction...
+                <div className="text-xl font-semibold | md:">
+                    My Portfolio Website Is Under Construction...
                 </div>
                 <div className="flex gap-2">
                     <a href="https://github.com/faiz-kirsten" target="_blank">
