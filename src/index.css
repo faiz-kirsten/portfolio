@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +13,7 @@
     filter: invert(56%) sepia(33%) saturate(3716%) hue-rotate(150deg)
         brightness(97%) contrast(95%);
 }
+
 .logo:hover > div {
     width: 8rem;
 }
@@ -18,6 +21,14 @@
 .icon:hover {
     filter: invert(56%) sepia(33%) saturate(3716%) hue-rotate(150deg)
         brightness(97%) contrast(95%);
+}
+
+.mobile-nav {
+    /* From https://css.glass */
+    background: rgba(241, 245, 249, 1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(241, 245, 249, 0.22);
 }
 
 /* 3 dot loader */

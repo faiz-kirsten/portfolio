@@ -12,6 +12,8 @@ export default {
             lato: ["Lato", "sans-serif"],
             inconsolata: ["Inconsolata", "sans-serif"],
             syne: ["Syne", "sans-serif"],
+            inter: ["Inter", "sans-serif"],
+            montserrat: ["Montserrat", "sans-serif"],
         },
     },
     plugins: [],
