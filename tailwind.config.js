@@ -14,6 +14,8 @@ export default {
             syne: ["Syne", "sans-serif"],
             inter: ["Inter", "sans-serif"],
             montserrat: ["Montserrat", "sans-serif"],
+            redHatDisplay: ["Red Hat Display", "sans-serif"],
+            poppins: ["Poppins", "sans-serif"],
         },
     },
     plugins: [],

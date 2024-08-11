@@ -1,91 +1,101 @@
 import { useState } from "react";
-import { TfiClose } from "react-icons/tfi";
-import { TfiAlignRight } from "react-icons/tfi";
-import { TfiHome } from "react-icons/tfi";
-import { TfiLayoutGrid2 } from "react-icons/tfi";
-import { TfiUser } from "react-icons/tfi";
-import { TfiIdBadge } from "react-icons/tfi";
+import { LuArrowUp, LuX } from "react-icons/lu";
+import { LuMenu } from "react-icons/lu";
+import { LuLayoutGrid } from "react-icons/lu";
+import { LuHome } from "react-icons/lu";
+import { LuGraduationCap } from "react-icons/lu";
+import { LuContact } from "react-icons/lu";
+import ButtonLink from "./ButtonLink";
 
-const Header = () => {
+const Header = ({ scrollY }) => {
     const [showNavMenu, setShowMenu] = useState(false);
 
+    const handleShowToTopBtn = () => {
+        window.scroll(0, 0);
+    };
+
     return (
-        <header className="my-5 fixed bottom-0 w-full | sm:static sm:w-auto">
-            <nav className="mobile-nav | hidden max-w-2xl justify-between p-5 rounded-full | sm:flex sm:mx-3 | md:mx-auto">
-                <a className="font-montserrat text-lg font-semibold" href="/">
+        <header className="my-5 fixed bottom-0 w-full | sm:sticky sm:w-full sm:top-5 z-50">
+            <nav className="mobile-nav | hidden max-w-2xl justify-between py-5 px-6 rounded-full  | sm:flex sm:mx-3 | md:mx-auto">
+                <a className="font-montserrat text-xl font-semibold" href="/">
                     faizk.<span className="text-orange-500">dev</span>
                 </a>
-                <menu className="flex gap-6 font-montserrat items-center | lg:gap-8">
-                    <a href="#edu" className="font-medium">
-                        Experience & Education
-                    </a>
-                    <a href="#projects" className="font-medium">
-                        Projects
-                    </a>
-                    <a href="#contact" className="font-medium">
-                        Contact
-                    </a>
+                <menu className="flex gap-6 items-center | lg:gap-8">
+                    <ButtonLink href="#edu">Resume</ButtonLink>
+                    <ButtonLink href="#projects">Projects</ButtonLink>
+                    <ButtonLink href="#contact">Contact</ButtonLink>
                 </menu>
             </nav>
 
             {/* Mobile nav */}
             <menu
                 className={`mobile-nav | ${
-                    showNavMenu ? "h-full" : "h-0 hidden"
-                } max-w-80 mx-auto grid gap-10 rounded-t-[2rem] text-xl py-8 px-4 font-montserrat transition-all duration-1000 | sm:hidden`}>
-                <a
-                    href="#edu"
-                    className="font-medium"
-                    onClick={() => setShowMenu(false)}>
-                    Experience & Education
-                </a>
-                <a
-                    href="#projects"
-                    className="font-medium"
-                    onClick={() => setShowMenu(false)}>
-                    Projects
-                </a>
-                <a
-                    href="#contact"
-                    className="font-medium"
-                    onClick={() => setShowMenu(false)}>
-                    Contact
-                </a>
+                    showNavMenu ? "h-full" : "hidden"
+                } max-w-80 mx-auto grid gap-10 rounded-t-[2rem] text-lg py-8 px-4 font-inconsolata transition-all duration-1000 | sm:hidden`}>
+                <div className="flex gap-3 items-center">
+                    <LuGraduationCap className="w-5 h-5 text-gray-600" />
+                    <ButtonLink href="#edu" onClick={() => setShowMenu(false)}>
+                        Resume
+                    </ButtonLink>
+                </div>
+
+                <div className="flex gap-3 items-center">
+                    <LuLayoutGrid className="w-5 h-5 text-gray-600" />
+                    <ButtonLink
+                        href="#projects"
+                        onClick={() => setShowMenu(false)}>
+                        Projects
+                    </ButtonLink>
+                </div>
+                <div className="flex gap-3 items-center">
+                    <LuContact className="w-5 h-5 text-gray-600" />
+                    <ButtonLink
+                        href="#contact"
+                        onClick={() => setShowMenu(false)}>
+                        Contact
+                    </ButtonLink>
+                </div>
             </menu>
 
             <nav
-                className={`mobile-nav | flex border justify-between max-w-80 mx-auto p-5 ${
+                className={`mobile-nav | flex border justify-between max-w-80 mx-auto px-4 py-5 ${
                     showNavMenu ? "rounded-b-[2rem]" : "rounded-full"
                 }  | sm:hidden`}>
                 {!showNavMenu ? (
                     <>
                         <a href="/" className="">
-                            <TfiHome className="w-6 h-6" />
+                            <LuHome className="w-6 h-6" />
                         </a>
                         <a href="#edu" className="">
-                            <TfiIdBadge className="w-6 h-6" />
+                            <LuGraduationCap className="w-6 h-6" />
                         </a>
                         <a href="#projects" className="">
-                            <TfiLayoutGrid2 className="w-6 h-6" />
+                            <LuLayoutGrid className="w-6 h-6" />
                         </a>
                         <a href="#contact" className="">
-                            <TfiUser className="w-6 h-6" />
+                            <LuContact className="w-6 h-6" />
                         </a>
+                        <LuArrowUp
+                            className={`${
+                                scrollY > 100 ? "block" : "hidden"
+                            } w-6 h-6 transition-all`}
+                            onClick={handleShowToTopBtn}></LuArrowUp>
                     </>
                 ) : (
                     <a
-                        className="font-montserrat h-6 text-base font-semibold"
+                        className="font-montserrat h-6 text-xl font-semibold"
                         href="/">
                         faizk.<span className="text-orange-500">dev</span>
                     </a>
                 )}
+
                 {!showNavMenu ? (
-                    <TfiAlignRight
+                    <LuMenu
                         className="w-6 h-6 transition-all"
                         onClick={() => setShowMenu(true)}
                     />
                 ) : (
-                    <TfiClose
+                    <LuX
                         className="w-6 h-6 transition-all"
                         onClick={() => setShowMenu(false)}
                     />
