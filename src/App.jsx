@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { LuArrowUp } from "react-icons/lu";
 import Hero from "./components/Hero";
 import Resume from "./components/Resume/Resume";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -11,15 +12,17 @@ const App = () => {
     const handleShowToTopBtn = () => {
         window.scroll(0, 0);
     };
-    console.log(scrollY);
+
     window.addEventListener("scroll", () => setScrollY(window.scrollY));
     return (
-        <div className="lines | relative | ">
+        <div className="lines | relative">
             <Header scrollY={scrollY} />
-            <main className="container mx-auto grid gap-28 mt-10 | lg:gap-36 lg:mt-24">
+            <main className="container mx-auto grid gap-24 mt-10 | lg:gap-36 lg:mt-24">
                 <Hero />
                 <Resume />
+                <Projects />
             </main>
+
             <footer className="h-96"></footer>
 
             <div

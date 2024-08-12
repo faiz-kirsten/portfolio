@@ -21,6 +21,7 @@ const Header = ({ scrollY }) => {
                     faizk.<span className="text-orange-500">dev</span>
                 </a>
                 <menu className="flex gap-6 items-center | lg:gap-8">
+                    <ButtonLink href="#">Home</ButtonLink>
                     <ButtonLink href="#edu">Resume</ButtonLink>
                     <ButtonLink href="#projects">Projects</ButtonLink>
                     <ButtonLink href="#contact">Contact</ButtonLink>
@@ -29,9 +30,17 @@ const Header = ({ scrollY }) => {
 
             {/* Mobile nav */}
             <menu
-                className={`mobile-nav | ${
-                    showNavMenu ? "h-full" : "hidden"
-                } max-w-80 mx-auto grid gap-10 rounded-t-[2rem] text-lg py-8 px-4 font-inconsolata transition-all duration-1000 | sm:hidden`}>
+                className={`| ${
+                    showNavMenu
+                        ? "mobile-nav | h-auto py-8"
+                        : "h-0 overflow-hidden border-none"
+                } max-w-80 px-4 mx-auto grid gap-10 rounded-t-[2rem] text-lg  font-inconsolata transition-all duration-300 | sm:hidden`}>
+                <div className="flex gap-3 items-center">
+                    <LuHome className="w-5 h-5 text-gray-600" />
+                    <ButtonLink href="#" onClick={() => setShowMenu(false)}>
+                        Home
+                    </ButtonLink>
+                </div>
                 <div className="flex gap-3 items-center">
                     <LuGraduationCap className="w-5 h-5 text-gray-600" />
                     <ButtonLink href="#edu" onClick={() => setShowMenu(false)}>
@@ -91,12 +100,12 @@ const Header = ({ scrollY }) => {
 
                 {!showNavMenu ? (
                     <LuMenu
-                        className="w-6 h-6 transition-all"
+                        className="w-6 h-6 transition-all duration-300"
                         onClick={() => setShowMenu(true)}
                     />
                 ) : (
                     <LuX
-                        className="w-6 h-6 transition-all"
+                        className="w-6 h-6 transition-all duration-300"
                         onClick={() => setShowMenu(false)}
                     />
                 )}

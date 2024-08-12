@@ -18,10 +18,11 @@ import ResumeImg from "./ResumeImg";
 
 import eduSvg from "../../assets/illustrations/edu.svg";
 import workSvg from "../../assets/illustrations/work.svg";
+import certificateSvg from "../../assets/illustrations/certificates.svg";
 
 const Resume = () => {
     return (
-        <section className="px-6 sm:px-2">
+        <section className="relative px-6 |  sm:px-10 sm:py-8">
             <Heading heading="edu">Resume</Heading>
             <div className="grid gap-14 | lg:gap-20">
                 <article className="flex flex-wrap gap-3 | md:gap-5">
@@ -60,9 +61,9 @@ const Resume = () => {
                     </Skill>
                 </article>
                 <div className="flex justify-center  | md:block ">
-                    <article className="max-w-[32rem] flex flex-col gap-3 | md:max-w-none md:flex-row md:gap-6">
+                    <article className="max-w-[32rem] flex flex-col gap-3 | sm:gap-4 | md:max-w-none md:flex-row md:gap-6">
                         <ResumeImg image={eduSvg} title="Education" />
-                        <div>
+                        <div className="md:w-2/3">
                             <Accordian
                                 title="Full Stack Web Developer"
                                 dates="2022 - 2023"
@@ -85,9 +86,9 @@ const Resume = () => {
                     </article>
                 </div>
                 <div className="flex justify-center | md:block">
-                    <article className="max-w-[32rem] flex flex-col gap-3 | md:max-w-none md:flex-row md:gap-6">
+                    <article className="max-w-[32rem] flex flex-col gap-3 | sm:gap-4  | md:max-w-none md:flex-row md:gap-6">
                         <ResumeImg image={workSvg} title="Experience" />
-                        <div>
+                        <div className="md:w-2/3">
                             <Accordian
                                 title="Full Stack Web Developer"
                                 dates="2022 - 2023"
@@ -98,7 +99,35 @@ const Resume = () => {
                                 title="Full Stack Web Developer"
                                 dates="2022 - 2023"
                                 institution="HyperionDev"
+                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos."
+                            />
+                            <Accordian
+                                title="Full Stack Web Developer"
+                                dates="2022 - 2023"
+                                institution="HyperionDev"
                                 description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
+                            />
+                        </div>
+                    </article>
+                </div>
+                <div className="flex justify-center | md:block">
+                    <article className="max-w-[32rem] flex flex-col gap-3 | sm:gap-4  | md:max-w-none md:flex-row md:gap-6">
+                        <ResumeImg
+                            image={certificateSvg}
+                            title="Certificates"
+                        />
+                        <div className="md:w-2/3">
+                            <Accordian
+                                title="Full Stack Web Developer"
+                                dates="2022 - 2023"
+                                institution="HyperionDev"
+                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
+                            />
+                            <Accordian
+                                title="Full Stack Web Developer"
+                                dates="2022 - 2023"
+                                institution="HyperionDev"
+                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos."
                             />
                             <Accordian
                                 title="Full Stack Web Developer"

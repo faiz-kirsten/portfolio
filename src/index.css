@@ -85,3 +85,19 @@ html {
     text-shadow: -1px 1px 0 #e5e7eb, 1px 1px 0 #e5e7eb, 1px -1px 0 #e5e7eb,
         -1px -1px 0 #e5e7eb;
 }
+
+.diagonal-background {
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.skill:hover > .skill_logo {
+    scale: 1.2;
+}
+
+.github-projects:hover > .github-logo {
+    scale: 1.1;
+}
+
+.project-link:hover > .project-logo {
+    transform: scale(1.1);
+}
