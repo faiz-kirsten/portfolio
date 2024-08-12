@@ -32,9 +32,8 @@ const Hero = () => {
                     skills.
                 </p>
                 <div className="flex items-center gap-6 | lg:gap-7 ">
-                    <a href="" className="">
-                        <Button variation="primary">View CV</Button>
-                    </a>
+                    <Button variation="primary">View CV</Button>
+
                     <div className="flex gap-3">
                         <a href="">
                             <LuGithub className="h-6 w-6 text-gray-600 hover:text-orange-500 transition-all duration-300" />

@@ -15,8 +15,8 @@ const Header = ({ scrollY }) => {
     };
 
     return (
-        <header className="my-5 fixed bottom-0 w-full | sm:sticky sm:w-full sm:top-5 z-50">
-            <nav className="mobile-nav | hidden max-w-2xl justify-between py-5 px-6 rounded-full  | sm:flex sm:mx-3 | md:mx-auto">
+        <header className="my-5 fixed bottom-0 w-full | sm:sticky sm:w-full sm:top-5 z-50 |">
+            <nav className="mobile-nav | hidden max-w-2xl justify-between py-5 px-6 rounded-full  | sm:flex sm:mx-auto">
                 <a className="font-montserrat text-xl font-semibold" href="/">
                     faizk.<span className="text-orange-500">dev</span>
                 </a>

@@ -1,5 +1,6 @@
 import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa6";
+import Button from "../Button";
 
 const Project = ({ project }) => {
     return (
@@ -30,21 +31,25 @@ const Project = ({ project }) => {
                     </div>
                 </div>
                 <div className="flex justify-between ">
-                    <a
+                    <Button
+                        variation="secondary"
                         href={project.live_demo_url}
-                        target="_blank"
-                        className="project-link | flex items-center gap-2 transition-all duration-300">
-                        <TbWorld className="project-logo | text-xl" />
-                        Live Demo
-                    </a>
+                        target="_blank">
+                        <div className="flex items-center gap-1">
+                            <TbWorld className="lg:text-lg" />
+                            <div className="lg:text-lg">Live Demo</div>
+                        </div>
+                    </Button>
 
-                    <a
+                    <Button
                         href={project.github_url}
                         target="_blank"
-                        className="project-link | flex items-center gap-2 transition-all duration-300">
-                        <FaGithub className="project-logo | text-xl" />
-                        GitHub
-                    </a>
+                        variation="secondary">
+                        <div className="flex items-center gap-1">
+                            <FaGithub className="lg:text-lg" />
+                            <div className="lg:text-lg">GitHub</div>
+                        </div>
+                    </Button>
                 </div>
             </div>
         </div>

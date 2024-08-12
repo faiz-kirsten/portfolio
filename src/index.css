@@ -101,3 +101,10 @@ html {
 .project-link:hover > .project-logo {
     transform: scale(1.1);
 }
+
+.button:hover > .button-div {
+    height: 0.6rem;
+}
+
+.button:hover > .button-text {
+}
