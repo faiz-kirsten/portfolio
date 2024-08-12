@@ -168,7 +168,7 @@ const Projects = () => {
                 {/* Mobile Filtering */}
                 <div className="flex justify-center | lg:hidden">
                     <div className="flex justify-between items-center py-4 | lg:hidden">
-                        <div className="flex items-center gap-3 w-96 | md:w-auto">
+                        <div className="flex items-center gap-3 | md:w-auto">
                             <div className="text-gray-700">Filter by</div>
                             <div className="relative flex-1">
                                 <select
