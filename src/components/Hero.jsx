@@ -9,8 +9,13 @@ import Button from "./Button";
 
 const Hero = () => {
     return (
-        <section className="px-10 grid gap-16 mt-10 font-montserrat | lg:flex lg:mt-24">
+        <section className="px-10 grid gap-16 font-montserrat | lg:flex ">
             <article className="grid gap-10 | lg:w-2/3 lg:flex lg:flex-col">
+                <a
+                    className="font-montserrat text-xl font-semibold sm:hidden"
+                    href="/">
+                    faizk.<span className="text-orange-500">dev</span>
+                </a>
                 <div className=" text-3xl grid gap-3 font-bold | lg:gap-3">
                     <div className="tracking-wide">I'm Faiz Kirsten</div>
                     <div className="tracking-wide underline w-max underline-offset-2">
@@ -28,7 +33,7 @@ const Hero = () => {
                 </p>
                 <div className="flex items-center gap-6 | lg:gap-7 ">
                     <a href="" className="">
-                        <Button>View CV</Button>
+                        <Button variation="primary">View CV</Button>
                     </a>
                     <div className="flex gap-3">
                         <a href="">
@@ -51,11 +56,11 @@ const Hero = () => {
                 className="flex gap-0.5 items-center text-xs text-gray-600 | lg:hidden">
                 Scroll Down <LuArrowDown />
             </a>
-            <div className="relative | flex items-center justify-center">
+            <div className="relative | flex items-center justify-center ">
                 <img
                     src={headshot}
                     alt=""
-                    className="w-2/3 rounded-tr-[5rem]"
+                    className="w-2/3 rounded-tr-[5rem] "
                 />
                 <div className="img-pattern | absolute -bottom-12 left-6 w-48 h-5/6 -z-10 | lg:w-64"></div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Heading = ({ heading, children }) => {
     return (
-        <h2 className="relative" id={heading}>
+        <h2 className="relative mb-16 font-montserrat | lg:mb-20" id={heading}>
             <div className="bordered-heading-text | text-4xl | sm:text-6xl">
                 {children}
             </div>

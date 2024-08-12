@@ -3,7 +3,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import { LuArrowUp } from "react-icons/lu";
 import Hero from "./components/Hero";
-import Resume from "./components/Resume";
+import Resume from "./components/Resume/Resume";
 
 const App = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -16,11 +16,11 @@ const App = () => {
     return (
         <div className="lines | relative | ">
             <Header scrollY={scrollY} />
-            <main className="container mx-auto grid gap-24 | lg:gap-32">
+            <main className="container mx-auto grid gap-28 mt-10 | lg:gap-36 lg:mt-24">
                 <Hero />
                 <Resume />
             </main>
-            <footer className="mt-96"></footer>
+            <footer className="h-96"></footer>
 
             <div
                 className={`back-to-top | ${
