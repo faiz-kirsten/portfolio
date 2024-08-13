@@ -10,16 +10,16 @@ const Footer = () => {
                         <a
                             className="font-montserrat text-xl font-semibold"
                             href="/">
-                            faizk.<span className="text-orange-500">dev</span>
+                            faizk.<span className="text-orange-600">dev</span>
                         </a>
                     </span>
 
                     <div className="flex gap-3">
                         <a href="">
-                            <LuGithub className="h-6 w-6 text-gray-700  hover:text-orange-500 transition-all duration-300" />
+                            <LuGithub className="h-6 w-6 text-gray-700  hover:text-orange-600 transition-all duration-300" />
                         </a>
                         <a href="">
-                            <LuLinkedin className="h-6 w-6 text-gray-700  hover:text-orange-500 transition-all duration-300" />
+                            <LuLinkedin className="h-6 w-6 text-gray-700  hover:text-orange-600 transition-all duration-300" />
                         </a>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ const Accordian = ({ title, dates, institution, description }) => {
                 onClick={() => setToggle((prevToggle) => !prevToggle)}>
                 <div className="flex items-center font-montserrat gap-3">
                     <FaPlus
-                        className={`transition-all duration-300 text-orange-500  ${
+                        className={`transition-all duration-300 text-orange-600  ${
                             toggle ? " rotate-45 " : " rotate-0 "
                         } `}
                     />
@@ -23,7 +23,7 @@ const Accordian = ({ title, dates, institution, description }) => {
             <div
                 className={`transition-all duration-300 grid gap-3 ${
                     toggle
-                        ? "h-auto border-b-[0.2px] border-dashed border-y py-3"
+                        ? "h-auto border-b-[0.2px] border-dashed border-y py-3 border-b-gray-700"
                         : "h-0 overflow-hidden border-dashed border-b-[0.2px]"
                 }`}>
                 <div className="font-inconsolata">{description}</div>

@@ -81,8 +81,8 @@ html {
 
 .bordered-heading-text {
     color: #fefefe;
-    text-shadow: -1px 1px 0 #e5e7eb, 1px 1px 0 #e5e7eb, 1px -1px 0 #e5e7eb,
-        -1px -1px 0 #e5e7eb;
+    text-shadow: -1px 1px 0 #d1d5db, 1px 1px 0 #d1d5db, 1px -1px 0 #d1d5db,
+        -1px -1px 0 #d1d5db;
 }
 
 .diagonal-background {
@@ -117,4 +117,8 @@ html {
         #e5e7eb,
         #6b7280
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.resume-wrapper {
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
 }

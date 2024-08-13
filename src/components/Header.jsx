@@ -18,7 +18,7 @@ const Header = ({ scrollY }) => {
         <header className="my-5 fixed bottom-0 w-full | sm:sticky sm:w-full sm:top-5 z-50 |">
             <nav className="mobile-nav | hidden max-w-2xl justify-between py-5 px-6 rounded-full  | sm:flex sm:mx-auto">
                 <a className="font-montserrat text-xl font-semibold" href="/">
-                    faizk.<span className="text-orange-500">dev</span>
+                    faizk.<span className="text-orange-600">dev</span>
                 </a>
                 <menu className="flex gap-6 items-center | lg:gap-8">
                     <ButtonLink href="#">Home</ButtonLink>
@@ -94,7 +94,7 @@ const Header = ({ scrollY }) => {
                     <a
                         className="font-montserrat h-6 text-xl font-semibold"
                         href="/">
-                        faizk.<span className="text-orange-500">dev</span>
+                        faizk.<span className="text-orange-600">dev</span>
                     </a>
                 )}
 

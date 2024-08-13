@@ -11,12 +11,12 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
     return (
-        <section className="px-10 grid gap-16 font-montserrat | lg:flex ">
+        <section className="container mx-auto  px-10 grid gap-16 font-montserrat | lg:flex ">
             <article className="grid gap-10 | lg:w-2/3 lg:flex lg:flex-col">
                 <a
                     className="font-montserrat text-xl font-semibold sm:hidden"
                     href="/">
-                    faizk.<span className="text-orange-500">dev</span>
+                    faizk.<span className="text-orange-600">dev</span>
                 </a>
                 <div className=" text-3xl grid gap-3 | lg:gap-3">
                     <div className="tracking-wide font-semibold">
@@ -46,10 +46,10 @@ const Hero = () => {
 
                     <div className="flex gap-3">
                         <a href="">
-                            <LuGithub className="h-6 w-6 text-gray-600 hover:text-orange-500 transition-all duration-300" />
+                            <LuGithub className="h-6 w-6 text-gray-600 hover:text-orange-600 transition-all duration-300" />
                         </a>
                         <a href="">
-                            <LuLinkedin className="h-6 w-6 text-gray-600 hover:text-orange-500 transition-all duration-300" />
+                            <LuLinkedin className="h-6 w-6 text-gray-600 hover:text-orange-600 transition-all duration-300" />
                         </a>
                     </div>
                 </div>

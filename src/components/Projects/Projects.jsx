@@ -89,7 +89,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="px-10 font-montserrat ">
+        <div className="container mx-auto px-10 font-montserrat ">
             <Heading heading="projects">Projects</Heading>
 
             <div className="mb-6 border-b border-dashed | lg:mb-12">
@@ -99,7 +99,7 @@ const Projects = () => {
                             <a
                                 href=""
                                 target="_blank"
-                                className="github-projects | relative hover:text-orange-500">
+                                className="github-projects | relative hover:text-orangborder-b-orange-600">
                                 <div className="flex items-center gap-1">
                                     <FaGithub className="github-logo | text-xl" />
                                     <div>GitHub</div>
@@ -112,7 +112,7 @@ const Projects = () => {
                                 <button
                                     className={`border-b-2 transition-all duration-300 border-solid py-3 px-3  ${
                                         filter === "all"
-                                            ? " font-semibold border-b-orange-500 "
+                                            ? " font-semibold border-b-orange-600 "
                                             : "border-b-transparent font-thin"
                                     }`}
                                     onClick={() => setFilter("all")}>
@@ -126,7 +126,7 @@ const Projects = () => {
                                 <button
                                     className={`border-b-2 transition-all duration-300 border-solid py-3 px-3 ${
                                         filter === "featured"
-                                            ? "border-b-orange-500 font-semibold "
+                                            ? "border-b-orange-600 font-semibold "
                                             : " font-thin border-b-transparent"
                                     }`}
                                     onClick={() => setFilter("featured")}>
@@ -146,7 +146,7 @@ const Projects = () => {
                                         className={`border-b-2 transition-all duration-300
                                   border-solid py-3 px-3  ${
                                       filter === category.category
-                                          ? " font-semibold border-b-orange-500 "
+                                          ? " font-semibold border-b-orange-600 "
                                           : " font-thin border-b-transparent"
                                   }`}
                                         onClick={() =>

@@ -52,7 +52,7 @@ const responsive = {
 
 const Resume = () => {
     return (
-        <section className="relative px-6 |  sm:px-10 sm:py-8">
+        <section className="container mx-auto  relative px-6 |  sm:px-10 ">
             <Heading heading="edu">Resume</Heading>
             <div className="grid gap-14 | lg:gap-20">
                 <article className="flex flex-wrap gap-3 | md:gap-5">

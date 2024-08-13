@@ -14,7 +14,7 @@ const Button = ({ variation, children, ...props }) => {
             <div
                 className={`${
                     variation === "secondary"
-                        ? " button-div | absolute bottom-0 w-full h-1.5 bg-orange-500 opacity-75 -z-10 transition-all duration-300"
+                        ? " button-div | absolute bottom-0 w-full h-1.5 bg-orange-600 opacity-75 -z-10 transition-all duration-300"
                         : ""
                 }`}></div>
         </a>

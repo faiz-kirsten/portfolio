@@ -21,7 +21,7 @@ const Project = ({ project }) => {
                         {project.technologies.map((technology, index) => (
                             <div
                                 key={index}
-                                className="font-inconsolata rounded-full transition-all duration-300 border  border-dashed border-black hover:border-solid hover:text-orange-500 hover:border-orange-500 px-2">
+                                className="font-inconsolata rounded-full transition-all duration-300 border  border-dashed border-black hover:border-solid hover:text-orange-600 hover:border-orange-600 px-2">
                                 {technology}
                             </div>
                         ))}
