@@ -19,6 +19,38 @@ import ResumeImg from "./ResumeImg";
 import eduSvg from "../../assets/illustrations/edu.svg";
 import workSvg from "../../assets/illustrations/work.svg";
 import certificateSvg from "../../assets/illustrations/certificates.svg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+    xxl: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 3000, min: 1537 },
+        items: 8,
+    },
+    xl: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 1536, min: 1281 },
+        items: 7,
+    },
+    lg: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 1280, min: 1024 },
+        items: 6,
+    },
+    md: {
+        breakpoint: { max: 1024, min: 768 },
+        items: 5,
+    },
+    sm: {
+        breakpoint: { max: 768, min: 641 },
+        items: 4,
+    },
+    base: {
+        breakpoint: { max: 640, min: 0 },
+        items: 3,
+    },
+};
 
 const Resume = () => {
     return (
@@ -60,6 +92,7 @@ const Resume = () => {
                         <SiPostman />
                     </Skill>
                 </article>
+
                 <div className="flex justify-center  | md:block ">
                     <article className="max-w-[32rem] flex flex-col gap-3 | sm:gap-4 | md:max-w-none md:flex-row md:gap-6">
                         <ResumeImg image={eduSvg} title="Education" />

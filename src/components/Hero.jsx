@@ -7,6 +7,8 @@ import { LuLinkedin } from "react-icons/lu";
 import ButtonLink from "./ButtonLink";
 import Button from "./Button";
 
+import Typewriter from "typewriter-effect";
+
 const Hero = () => {
     return (
         <section className="px-10 grid gap-16 font-montserrat | lg:flex ">
@@ -16,10 +18,18 @@ const Hero = () => {
                     href="/">
                     faizk.<span className="text-orange-500">dev</span>
                 </a>
-                <div className=" text-3xl grid gap-3 font-bold | lg:gap-3">
-                    <div className="tracking-wide">I'm Faiz Kirsten</div>
-                    <div className="tracking-wide underline w-max underline-offset-2">
-                        Software Engineer
+                <div className=" text-3xl grid gap-3 | lg:gap-3">
+                    <div className="tracking-wide font-semibold">
+                        I'm Faiz Kirsten
+                    </div>
+                    <div className="tracking-wide font-montserrat font-bold">
+                        <Typewriter
+                            options={{
+                                strings: ["Software Engineer", "Web Developer"],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
                     </div>
                 </div>
                 <p className="text-gray-800 font-inconsolata">

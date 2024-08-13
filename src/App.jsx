@@ -5,6 +5,7 @@ import { LuArrowUp } from "react-icons/lu";
 import Hero from "./components/Hero";
 import Resume from "./components/Resume/Resume";
 import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
 
 const App = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -23,7 +24,7 @@ const App = () => {
                 <Projects />
             </main>
 
-            <footer className="h-96"></footer>
+            <Footer className="h-96"></Footer>
 
             <div
                 className={`back-to-top | ${

@@ -166,7 +166,7 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Mobile Filtering */}
-                <div className="flex justify-center | lg:hidden">
+                <div className="flex justify-center | md:justify-start | lg:hidden">
                     <div className="flex justify-between items-center py-4 | lg:hidden">
                         <div className="flex items-center gap-3 | md:w-auto">
                             <div className="text-gray-700">Filter by</div>
@@ -212,7 +212,7 @@ const Projects = () => {
             </div>
 
             <div className="flex justify-center | md:block">
-                <div className="transition-all duration-300 grid gap-8 w-80 |  md:w-auto md:grid-cols-2 md:gap-10 | lg:grid-cols-3 lg:gap-12">
+                <div className="transition-all duration-300 grid gap-8 w-80 |  md:w-auto md:grid-cols-2 md:gap-10 | xl:grid-cols-3 lg:gap-12 ">
                     {filteredProjects.map((project) => (
                         <Project key={project.id} project={project} />
                     ))}

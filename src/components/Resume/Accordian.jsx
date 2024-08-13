@@ -4,10 +4,10 @@ import { FaPlus } from "react-icons/fa6";
 const Accordian = ({ title, dates, institution, description }) => {
     const [toggle, setToggle] = useState(false);
     return (
-        <div
-            className={`hover:translate-x-1 transition-all duration-300 cursor-pointer `}
-            onClick={() => setToggle((prevToggle) => !prevToggle)}>
-            <div className="flex items-center justify-between py-4">
+        <div className={`  `}>
+            <div
+                className="flex items-center justify-between py-4 cursor-pointer hover:translate-x-1 transition-all duration-300 "
+                onClick={() => setToggle((prevToggle) => !prevToggle)}>
                 <div className="flex items-center font-montserrat gap-3">
                     <FaPlus
                         className={`transition-all duration-300 text-orange-500  ${
