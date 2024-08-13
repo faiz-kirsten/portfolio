@@ -19,8 +19,6 @@ import ResumeImg from "./ResumeImg";
 import eduSvg from "../../assets/illustrations/edu.svg";
 import workSvg from "../../assets/illustrations/work.svg";
 import certificateSvg from "../../assets/illustrations/certificates.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
     xxl: {
