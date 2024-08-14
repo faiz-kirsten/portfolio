@@ -12,7 +12,7 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
     return (
         <section className="container mx-auto  px-10 grid gap-16 font-montserrat | lg:flex ">
-            <article className="grid gap-10 | lg:w-2/3 lg:flex lg:flex-col">
+            <article className="grid gap-10 | lg:w-2/3 lg:flex lg:flex-col ">
                 <a
                     className="font-montserrat text-xl font-semibold sm:hidden"
                     href="/">

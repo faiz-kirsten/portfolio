@@ -29,21 +29,12 @@ html {
 }
 
 .mobile-nav {
-    /* From https://css.glass */
-    background: #f1f5f9;
-    backdrop-filter: blur(9.4px);
-    -webkit-backdrop-filter: blur(9.4px);
-    /* border: 1px solid rgba(241, 245, 249, 0.22); */
-    background: #f1f5f9;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    /* background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px) saturate(39%);
+    -webkit-backdrop-filter: blur(10px) saturate(39%);
+    background-color: rgba(209, 213, 219, 0.21);
+    box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.1),
+        0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+        0px 0px 0px 1px rgba(25, 28, 33, 0.08);
 }
 
 .back-to-top {
@@ -109,13 +100,13 @@ html {
     background: #e5e7eb; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
-        #e5e7eb,
-        #6b7280
+        #f3f4f6,
+        #e5e7eb
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
         to right,
-        #e5e7eb,
-        #6b7280
+        #f3f4f6,
+        #e5e7eb
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

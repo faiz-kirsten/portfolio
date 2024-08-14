@@ -89,7 +89,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="container mx-auto px-10 font-montserrat ">
+        <section className="container mx-auto px-10 font-montserrat ">
             <Heading heading="projects">Projects</Heading>
 
             <div className="mb-6 border-b border-dashed | lg:mb-12">
@@ -192,7 +192,7 @@ const Projects = () => {
                                     </option>
                                     {CATEGORIES.map((category, index) => (
                                         <option
-                                            className="w-max"
+                                            className=""
                                             key={index}
                                             value={category.category}>
                                             {category.category} (
@@ -212,13 +212,13 @@ const Projects = () => {
             </div>
 
             <div className="flex justify-center | md:block">
-                <div className="transition-all duration-300 grid gap-8 w-80 |  md:w-auto md:grid-cols-2 md:gap-10 | xl:grid-cols-3 lg:gap-12 ">
+                <div className="transition-all duration-300 grid gap-8  |  md:w-auto md:grid-cols-2 md:gap-10 | xl:grid-cols-3 lg:gap-12 ">
                     {filteredProjects.map((project) => (
                         <Project key={project.id} project={project} />
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

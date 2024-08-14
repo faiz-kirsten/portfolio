@@ -1,6 +1,7 @@
 import Heading from "../Heading";
 import Skill from "../Resume/Skill";
 import Accordian from "../Resume/Accordian";
+import ResumeImg from "./ResumeImg";
 
 // logos for skills
 import { FaHtml5 } from "react-icons/fa";
@@ -14,7 +15,8 @@ import { FaNode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPostman } from "react-icons/si";
-import ResumeImg from "./ResumeImg";
+import { PiArrowBendUpLeftFill } from "react-icons/pi";
+import { FaArrowTurnDown } from "react-icons/fa6";
 
 import eduSvg from "../../assets/illustrations/edu.svg";
 import workSvg from "../../assets/illustrations/work.svg";
@@ -55,40 +57,50 @@ const Resume = () => {
         <section className="container mx-auto  relative px-6 |  sm:px-10 ">
             <Heading heading="edu">Resume</Heading>
             <div className="grid gap-14 | lg:gap-20">
-                <article className="flex flex-wrap gap-3 | md:gap-5">
-                    <Skill name="HTML">
-                        <FaHtml5 />
-                    </Skill>
-                    <Skill name="JavaScript">
-                        <IoLogoJavascript />
-                    </Skill>
-                    <Skill name="CSS">
-                        <FaCss3Alt />
-                    </Skill>
-                    <Skill name="Java">
-                        <FaJava />
-                    </Skill>
-                    <Skill name="MySQL">
-                        <SiMysql />
-                    </Skill>
-                    <Skill name="MongoDB">
-                        <SiMongodb />
-                    </Skill>
-                    <Skill name="React">
-                        <FaReact />
-                    </Skill>
-                    <Skill name="Node.js">
-                        <FaNode />
-                    </Skill>
-                    <Skill name="Python">
-                        <FaPython />
-                    </Skill>
-                    <Skill name="Tailwind CSS">
-                        <RiTailwindCssFill />
-                    </Skill>
-                    <Skill name="Postman">
-                        <SiPostman />
-                    </Skill>
+                <article className="relative ">
+                    <div className="flex items-center gap-3 mb-4 ">
+                        <div className="| font-inconsolata font-bold  text-lg | md:mb-0 md:-top-8  md:-right-8 md:absolute md:rotate-[20deg] md:text-xl">
+                            Tech Stack
+                        </div>
+
+                        <FaArrowTurnDown className="text-xs md:hidden text-orange-600 font-bold translate-y-1" />
+                    </div>
+                    <PiArrowBendUpLeftFill className="| text-orange-600 hidden font-bold tracking-wide md:text-2xl mb-4 | md:mb-0 md:block md:-top-12 md:right-20 md:absolute md:-rotate-[45deg]" />
+                    <div className="flex flex-wrap gap-3 | md:gap-5 | lg:pl-">
+                        <Skill name="HTML">
+                            <FaHtml5 />
+                        </Skill>
+                        <Skill name="JavaScript">
+                            <IoLogoJavascript />
+                        </Skill>
+                        <Skill name="CSS">
+                            <FaCss3Alt />
+                        </Skill>
+                        <Skill name="Java">
+                            <FaJava />
+                        </Skill>
+                        <Skill name="MySQL">
+                            <SiMysql />
+                        </Skill>
+                        <Skill name="MongoDB">
+                            <SiMongodb />
+                        </Skill>
+                        <Skill name="React">
+                            <FaReact />
+                        </Skill>
+                        <Skill name="Node.js">
+                            <FaNode />
+                        </Skill>
+                        <Skill name="Python">
+                            <FaPython />
+                        </Skill>
+                        <Skill name="Tailwind CSS">
+                            <RiTailwindCssFill />
+                        </Skill>
+                        <Skill name="Postman">
+                            <SiPostman />
+                        </Skill>
+                    </div>
                 </article>
 
                 <div className="flex justify-center  | md:block ">

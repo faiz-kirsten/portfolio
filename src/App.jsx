@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Resume from "./components/Resume/Resume";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 const App = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -24,6 +25,7 @@ const App = () => {
                     <Resume />
                 </div>
                 <Projects />
+                <Contact />
             </main>
 
             <Footer className="h-96"></Footer>

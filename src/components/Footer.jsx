@@ -3,7 +3,7 @@ import { LuLinkedin } from "react-icons/lu";
 
 const Footer = () => {
     return (
-        <footer className="footer | mt-24 px-10 pb-24 pt-10 | md:px-6 ">
+        <footer className="footer |  mt-24 px-10 pb-24 pt-10 | md:px-6 ">
             <div className="container mx-auto py-6 grid gap-4">
                 <div className="flex items-center justify-between | md:flex-col md:items-baseline md:gap-6">
                     <span className="">

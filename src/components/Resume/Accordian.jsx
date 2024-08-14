@@ -23,8 +23,8 @@ const Accordian = ({ title, dates, institution, description }) => {
             <div
                 className={`transition-all duration-300 grid gap-3 ${
                     toggle
-                        ? "h-auto border-b-[0.2px] border-dashed border-y py-3 border-b-gray-700"
-                        : "h-0 overflow-hidden border-dashed border-b-[0.2px]"
+                        ? "h-auto border-y-[0.2px] border-dashed border-y py-3 border-y-gray-700"
+                        : "h-0 overflow-hidden border-dashed border-b-[0.2px] border-b-gray-700"
                 }`}>
                 <div className="font-inconsolata">{description}</div>
                 <div className="font-montserrat">{institution}</div>
