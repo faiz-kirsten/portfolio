@@ -15,10 +15,14 @@ const Footer = () => {
                     </span>
 
                     <div className="flex gap-3">
-                        <a href="">
+                        <a
+                            href="https://github.com/faiz-kirsten"
+                            target="_blank">
                             <LuGithub className="h-6 w-6 text-gray-700  hover:text-orange-600 transition-all duration-300" />
                         </a>
-                        <a href="">
+                        <a
+                            href="https://www.linkedin.com/in/faiz-kirsten/"
+                            target="_blank">
                             <LuLinkedin className="h-6 w-6 text-gray-700  hover:text-orange-600 transition-all duration-300" />
                         </a>
                     </div>

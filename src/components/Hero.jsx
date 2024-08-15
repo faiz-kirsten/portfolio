@@ -42,13 +42,22 @@ const Hero = () => {
                     skills.
                 </p>
                 <div className="flex items-center gap-6 | lg:gap-7 ">
-                    <Button variation="primary">View CV</Button>
+                    <Button
+                        variation="primary"
+                        href="https://drive.google.com/file/d/14zlGiHqr4SGjxme80JNl3bBVMxlq66ax/view?usp=sharing"
+                        target="_blank">
+                        View CV
+                    </Button>
 
                     <div className="flex gap-3">
-                        <a href="">
+                        <a
+                            href="https://github.com/faiz-kirsten"
+                            target="_blank">
                             <LuGithub className="h-6 w-6 text-gray-600 hover:text-orange-600 transition-all duration-300" />
                         </a>
-                        <a href="">
+                        <a
+                            href="https://www.linkedin.com/in/faiz-kirsten/"
+                            target="_blank">
                             <LuLinkedin className="h-6 w-6 text-gray-600 hover:text-orange-600 transition-all duration-300" />
                         </a>
                     </div>

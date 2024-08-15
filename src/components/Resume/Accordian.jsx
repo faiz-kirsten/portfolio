@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
 
-const Accordian = ({ title, dates, institution, description }) => {
+const Accordian = ({
+    title,
+    dates,
+    institution,
+    description,
+    institutionUrl,
+    certificateUrl,
+}) => {
     const [toggle, setToggle] = useState(false);
     return (
         <div className={`  `}>
@@ -27,7 +34,14 @@ const Accordian = ({ title, dates, institution, description }) => {
                         : "h-0 overflow-hidden border-dashed border-b-[0.2px] border-b-gray-700"
                 }`}>
                 <div className="font-inconsolata">{description}</div>
-                <div className="font-montserrat">{institution}</div>
+                <div className="font-montserrat">
+                    <a
+                        href={institutionUrl}
+                        target="_blank"
+                        className="underline hover:text-orange-600">
+                        {institution}
+                    </a>
+                </div>
             </div>
         </div>
     );

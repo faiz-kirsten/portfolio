@@ -108,22 +108,18 @@ const Resume = () => {
                         <ResumeImg image={eduSvg} title="Education" />
                         <div className="md:w-2/3">
                             <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
+                                title="Full Stack Web & Software Developer - Bootcamp"
+                                dates="10/2022 - 12/2023"
                                 institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
+                                description="Methodologies: Agile development, version control with Git/GitHub, and test-driven development (TDD). Front-End Topics: HTML, CSS, JavaScript, React, responsive design, and user experience (UX) principles. Back-End Topics: Node.js, Express.js, SQL & NoSQL databases, and RESTful API development. Software Engineering Principles: Object-oriented programming (OOP), data structures, algorithms, and design patterns. "
+                                institutionUrl="https://www.hyperiondev.com/"
                             />
                             <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
+                                title="Fundamentals of Computer Science – Bootcamp"
+                                dates="04/2022 - 10/2022"
                                 institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
-                            />
-                            <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
-                                institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
+                                description="Programming Concepts: Pseudo-code, variables, control structures (if, elif, else, loops), operators, error handling, and defensive programming. Python Programming: Data types (strings, numbers, booleans), data structures (lists, dictionaries, 2D lists), file handling (input/output), functions (built-in and custom), recursion, and Object-Oriented Programming (OOP) principles like classes and inheritance."
+                                institutionUrl="https://www.hyperiondev.com/"
                             />
                         </div>
                     </article>
@@ -133,50 +129,11 @@ const Resume = () => {
                         <ResumeImg image={workSvg} title="Experience" />
                         <div className="md:w-2/3">
                             <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
-                                institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
-                            />
-                            <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
-                                institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos."
-                            />
-                            <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
-                                institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
-                            />
-                        </div>
-                    </article>
-                </div>
-                <div className="flex justify-center | md:block">
-                    <article className="max-w-[32rem] flex flex-col gap-3 | sm:gap-4  | md:max-w-none md:flex-row md:gap-6">
-                        <ResumeImg
-                            image={certificateSvg}
-                            title="Certificates"
-                        />
-                        <div className="md:w-2/3">
-                            <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
-                                institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
-                            />
-                            <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
-                                institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos."
-                            />
-                            <Accordian
-                                title="Full Stack Web Developer"
-                                dates="2022 - 2023"
-                                institution="HyperionDev"
-                                description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero earum optio, impedit, veniam perferendis corporis, nobis laudantium itaque architecto non quos. "
+                                title="Full Stack Web Developer - Contract"
+                                dates="07/2024 - Present"
+                                institution="GhostedZA"
+                                description=" Building a dynamic and responsive e-commerce platform for a clothing business using React and Tailwind CSS for a modern and user-friendly front-end. Leveraging Firebase for back-end development, including user authentication, real-time database management, and cloud storage. Ensuring optimal user experience across devices by implementing responsive design principles with Tailwind CSS. Focused on performance optimization and scalability, ensuring a seamless shopping experience and efficient data handling. "
+                                institutionUrl="https://www.instagram.com/ghosted.za/"
                             />
                         </div>
                     </article>

@@ -10,52 +10,7 @@ const CATEGORIES = [
     { category: "Console Based" },
 ];
 
-const PROJECTS = [
-    {
-        id: 1,
-        name: "E-commerce Store",
-        technologies: ["React", "Django", "CSS", "Tailwind CSS"],
-        featured: true,
-        short_description: "An online clothing store for a client",
-        category: "Web Development",
-        live_demo_url: "",
-        github_url: "",
-        image_urls: [""],
-    },
-    {
-        id: 2,
-        name: "Console-based-app",
-        technologies: ["Java", "MySQL"],
-        featured: false,
-        short_description: "An online clothing store for a client",
-        category: "Console Based",
-        live_demo_url: "",
-        github_url: "",
-        image_urls: [""],
-    },
-    {
-        id: 3,
-        name: "Employee credential management app",
-        technologies: ["React", "node.js", "MongoDB", "CSS", "Tailwind CSS"],
-        featured: false,
-        short_description: "An online clothing store for a client",
-        category: "Web Development",
-        live_demo_url: "",
-        github_url: "",
-        image_urls: [""],
-    },
-    {
-        id: 4,
-        name: "Project management app",
-        technologies: ["React", "node.js", "MongoDB", "Tailwind CSS"],
-        featured: true,
-        short_description: "An online clothing store for a client",
-        category: "Console Based",
-        live_demo_url: "",
-        github_url: "",
-        image_urls: [""],
-    },
-];
+const PROJECTS = [];
 
 const calculateProjectCount = (filteredCategory, projects) => {
     if (filteredCategory === "featured") {
@@ -97,7 +52,7 @@ const Projects = () => {
                     <div className=" flex items-center gap-10">
                         <div className="flex items-center">
                             <a
-                                href=""
+                                href="https://github.com/faiz-kirsten"
                                 target="_blank"
                                 className="github-projects | relative hover:text-orangborder-b-orange-600">
                                 <div className="flex items-center gap-1">
@@ -211,13 +166,27 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center | md:block">
-                <div className="transition-all duration-300 grid gap-8  |  md:w-auto md:grid-cols-2 md:gap-10 | xl:grid-cols-3 lg:gap-12 ">
-                    {filteredProjects.map((project) => (
-                        <Project key={project.id} project={project} />
-                    ))}
+            {filteredProjects.length > 0 ? (
+                <div className="flex justify-center | md:block">
+                    <div className="transition-all duration-300 grid gap-8  |  md:w-auto md:grid-cols-2 md:gap-10 | xl:grid-cols-3 lg:gap-12 ">
+                        {filteredProjects.map((project) => (
+                            <Project key={project.id} project={project} />
+                        ))}
+                    </div>
                 </div>
-            </div>
+            ) : (
+                <div className="grid place-content-center ">
+                    <div className="text-2xl">
+                        Projects will be added soon...visit my{" "}
+                        <a
+                            href="https://github.com/faiz-kirsten"
+                            target="_blank"
+                            className="underline hover:text-orange-600">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
