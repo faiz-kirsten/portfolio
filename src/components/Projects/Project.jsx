@@ -4,7 +4,7 @@ import Button from "../Button";
 
 const Project = ({ project }) => {
     return (
-        <div className="project | shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] rounded-lg h-[34rem] flex flex-col hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] hover:-translate-y-2 transition-all duration-300 | md:h-[36rem] | lg:h-[38rem]">
+        <div className="project | shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] rounded-lg  flex flex-col hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] hover:-translate-y-2 transition-all duration-300 ">
             <img
                 src="https://via.placeholder.com/600/56a8c2"
                 alt=""

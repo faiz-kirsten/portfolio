@@ -10,7 +10,50 @@ const CATEGORIES = [
     { category: "Console Based" },
 ];
 
-const PROJECTS = [];
+const PROJECTS = [
+    {
+        id: 1,
+        name: "Ghosted Clothing Brand Website + Admin Dashboard",
+        technologies: ["React", "Tailwind CSS", "Firebase"],
+        short_description:
+            "Building a dynamic and responsive e-commerce platform for a clothing business and an Admin dashboard to manage product listings.",
+        live_demo_url: "https://ghosted-za.netlify.app/",
+        github_url: "",
+        category: "Web Development",
+        featured: true,
+    },
+
+    {
+        id: 2,
+        name: "Employee Credential Manager",
+        technologies: [
+            "React",
+            "Tailwind CSS",
+            "MongoDB",
+            "Node.js",
+            "Express.js",
+        ],
+        short_description:
+            "Developed a web application using the MERN stack (MongoDB, Express, React, Node.js) designed to securely manage employee credentials.",
+        live_demo_url: "https://credguard.netlify.app/",
+        github_url:
+            "https://github.com/faiz-kirsten/user-credential-manager-frontend",
+        thumbnail: "https://via.placeholder.com/600/56a8c2",
+        category: "Web Development",
+        featured: true,
+    },
+
+    {
+        id: 3,
+        name: "Hangman Clone",
+        technologies: ["React", "Tailwind CSS"],
+        short_description:
+            "A hangman clone which leverages AI to generate a new word each time the user clicks play.",
+        live_demo_url: "https://hangman-clone.netlify.app/",
+        github_url: "https://github.com/faiz-kirsten/local-link ",
+        thumbnail: "https://via.placeholder.com/600/56a8c2",
+    },
+];
 
 const calculateProjectCount = (filteredCategory, projects) => {
     if (filteredCategory === "featured") {
@@ -49,19 +92,7 @@ const Projects = () => {
 
             <div className="mb-6 border-b border-dashed | lg:mb-12">
                 <div className="hidden | lg:block ">
-                    <div className=" flex items-center gap-10">
-                        <div className="flex items-center">
-                            <a
-                                href="https://github.com/faiz-kirsten"
-                                target="_blank"
-                                className="github-projects | relative hover:text-orangborder-b-orange-600">
-                                <div className="flex items-center gap-1">
-                                    <FaGithub className="github-logo | text-xl" />
-                                    <div>GitHub</div>
-                                </div>
-                                <BsBoxArrowUpRight className="github-arrow | absolute -top-0 -right-2 text-[0.50rem]" />
-                            </a>
-                        </div>
+                    <div className=" flex items-center justify-between">
                         <div className="flex gap-6">
                             <div className="relative">
                                 <button
@@ -118,20 +149,34 @@ const Projects = () => {
                                 </div>
                             ))}
                         </div>
+                        <div className="flex items-center">
+                            <a
+                                href="https://github.com/faiz-kirsten"
+                                target="_blank"
+                                className="github-projects | relative ">
+                                <FaGithub className="github-logo text-lg | md:text-2xl hover:text-orange-900 transition-all" />
+
+                                <BsBoxArrowUpRight className="github-arrow | absolute -top-0 -right-2 text-[0.50rem]" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 {/* Mobile Filtering */}
                 <div className="flex justify-center | md:justify-start | lg:hidden">
                     <div className="flex justify-between items-center py-4 | lg:hidden">
-                        <div className="flex items-center gap-3 | md:w-auto">
-                            <div className="text-gray-700">Filter by</div>
+                        <div className="flex items-center gap-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] pl-3 rounded-md | md:w-auto">
+                            <label
+                                className="text-gray-700"
+                                htmlFor="categoryFilter">
+                                Filter by
+                            </label>
                             <div className="relative flex-1">
                                 <select
-                                    name=""
-                                    id=""
+                                    name="categoryFilter"
+                                    id="categoryFilter"
                                     onChange={(e) => setFilter(e.target.value)}
                                     value={filter}
-                                    className="select-input | font-montserrat px-6 py-3 rounded-full appearance-none shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] w-full | md:px-6 md:w-64">
+                                    className="select-input | bg-transparent font-montserrat px-6 py-3  appearance-none  w-full | md:px-6 md:w-64">
                                     <option value="all">
                                         All (
                                         {calculateProjectCount("all", PROJECTS)}
@@ -176,14 +221,8 @@ const Projects = () => {
                 </div>
             ) : (
                 <div className="grid place-content-center ">
-                    <div className="text-2xl">
-                        Projects will be added soon...visit my{" "}
-                        <a
-                            href="https://github.com/faiz-kirsten"
-                            target="_blank"
-                            className="underline hover:text-orange-600">
-                            GitHub
-                        </a>
+                    <div className="text-lg md:text-xl">
+                        No projects available for filter: {filter}.
                     </div>
                 </div>
             )}

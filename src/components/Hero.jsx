@@ -33,7 +33,8 @@ const Hero = () => {
                     </div>
                 </div>
                 <p className="text-gray-800 font-inconsolata">
-                    Passionate and dedicated HyperionDev Full Stack Web & Software Developer graduate with experience in building web
+                    Passionate and dedicated HyperionDev Full Stack Web &
+                    Software Developer graduate with experience in building web
                     applications, seeking a transformative opportunity to apply
                     theoretical knowledge and gain hands-on experience in
                     software development. Eager to secure a position in a

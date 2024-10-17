@@ -17,7 +17,7 @@ const Accordian = ({
                 onClick={() => setToggle((prevToggle) => !prevToggle)}>
                 <div className="flex items-center font-montserrat gap-3">
                     <FaPlus
-                        className={`transition-all duration-300 text-orange-600  ${
+                        className={`transition-all duration-300 text-gray-700  ${
                             toggle ? " rotate-45 " : " rotate-0 "
                         } `}
                     />

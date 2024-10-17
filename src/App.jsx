@@ -21,7 +21,7 @@ const App = () => {
             <Header scrollY={scrollY} />
             <main className="grid gap-24 mt-10 | lg:gap-36 lg:mt-24">
                 <Hero />
-                <div className="lg: resume-wrapper | bg-transparent py-10 | lg:py-24 lg:bg-gray-100 | ">
+                <div className="lg: resume-wrapper | bg-transparent pt-10 | lg:pt-24 | ">
                     <Resume />
                 </div>
                 <Projects />
